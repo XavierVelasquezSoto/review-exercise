@@ -63,17 +63,16 @@ console.log(resultMultiplicacion);
 
 //7 - Crea una función llamada sumDigits que tome un número de 3 cifras como parámetro y devuelva la suma de sus dígitos.
 
-/* const sumDigits = num => {
+const sumDigits = num => {
   let string = String(num);
 
-  const stringSum = string.charAt(0) + string.charAt(1) + string.charAt(2);
+  const stringSum = Number(string.charAt(0)) + Number(string.charAt(1)) + Number(string.charAt(2));
 
-  if (string[0] + string[1] + string[2]) {
     return stringSum;
-  }
+  
 };
 const resultSumDigits = sumDigits(168);
-console.log(resultSumDigits); */
+console.log(resultSumDigits);
 
 //8 - Crea una función llamada longestWord que reciba 2 palabras como parámetro y devuelva la palabra más larga.
 
