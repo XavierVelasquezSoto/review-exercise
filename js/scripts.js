@@ -68,8 +68,7 @@ const sumDigits = num => {
 
   const stringSum = Number(string.charAt(0)) + Number(string.charAt(1)) + Number(string.charAt(2));
 
-    return stringSum;
-  
+  return stringSum;
 };
 const resultSumDigits = sumDigits(168);
 console.log(resultSumDigits);
@@ -210,26 +209,23 @@ console.log(resultIntercalated);
 //20 - Crea una función que reciba un array con un número impar de elementos e imprima por consola el valor de la posición central, por ejemplo, si recibe [1,2,3,4,5] deberá imprimir 3, pero si recibe [1,2,3] deberá imprimir 2, si el número de elementos no es impar deberá imprimir "el array no es válido"
 
 const positionCentral = array => {
-  const odd = Math.floor(array.length / 2)
+  const odd = Math.floor(array.length / 2);
 
-  if(array.length % 2 === 0){
-    return `El array no es válido`
-  }else {
-    return array[odd]
-  }  
+  if (array.length % 2 === 0) {
+    return `El array no es válido`;
+  } else {
+    return array[odd];
+  }
+};
 
-
-}
-
-const resultPositionCentral1 = positionCentral([1,2,3,4,5,6,7]);
+const resultPositionCentral1 = positionCentral([1, 2, 3, 4, 5, 6, 7]);
 console.log(resultPositionCentral1);
 
-const resultPositionCentral2 = positionCentral([1,2,3,4,5]);
+const resultPositionCentral2 = positionCentral([1, 2, 3, 4, 5]);
 console.log(resultPositionCentral2);
 
-const resultPositionCentral3 = positionCentral([1,2,3,4,5,6]);
+const resultPositionCentral3 = positionCentral([1, 2, 3, 4, 5, 6]);
 console.log(resultPositionCentral3);
-
 
 //21 - Crea una función que reciba una palabra de 5 letras e imprima sólo las vocales, por ejemplo, si recibe "hola" deberá imprimir "oa"
 
